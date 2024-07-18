@@ -1,21 +1,17 @@
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-var get = require('lodash/get');
-var reduce = require('lodash/reduce');
-var split = require('lodash/split');
-var includes = require('lodash/includes');
-var endsWith = require('lodash/endsWith');
-var isEqual = require('lodash/isEqual');
-var toString = require('lodash/toString');
-var trim = require('lodash/trim');
-var findIndex = require('lodash/findIndex');
-var concat = require('lodash/concat');
-var join = require('lodash/join');
-var curry = require('lodash/curry');
-var cloneDeep = require('lodash/cloneDeep');
-var set = require('lodash/set');
+import get from 'lodash/get';
+import reduce from 'lodash/reduce';
+import split from 'lodash/split';
+import includes from 'lodash/includes';
+import endsWith from 'lodash/endsWith';
+import isEqual from 'lodash/isEqual';
+import toString from 'lodash/toString';
+import trim from 'lodash/trim';
+import findIndex from 'lodash/findIndex';
+import concat from 'lodash/concat';
+import join from 'lodash/join';
+import curry from 'lodash/curry';
+import cloneDeep from 'lodash/cloneDeep';
+import set from 'lodash/set';
 
 const detectArrayOfObject = (pathElement)=>includes(pathElement, '[{') && endsWith(pathElement, '}]');
 const parsePathElement = (pathElement)=>{
@@ -88,14 +84,4 @@ const normalizedUpdateFunction = (path, updateFunction, origin)=>{
 };
 const deepUpdate = curry(normalizedUpdateFunction);
 
-exports.deepGet = deepGet;
-exports.deepSet = deepSet;
-exports.deepUpdate = deepUpdate;
-exports.default = normalizePath;
-exports.detectArrayOfObject = detectArrayOfObject;
-exports.getDeepPath = getDeepPath;
-exports.normalizePath = normalizePath;
-exports.normalizedGetFunction = normalizedGetFunction;
-exports.normalizedSetFunction = normalizedSetFunction;
-exports.normalizedUpdateFunction = normalizedUpdateFunction;
-exports.parsePathElement = parsePathElement;
+export { deepGet, deepSet, deepUpdate, normalizePath as default, detectArrayOfObject, getDeepPath, normalizePath, normalizedGetFunction, normalizedSetFunction, normalizedUpdateFunction, parsePathElement };
