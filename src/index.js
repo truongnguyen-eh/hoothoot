@@ -1,19 +1,17 @@
-import {
-  get,
-  reduce,
-  split,
-  includes,
-  endsWith,
-  isEqual,
-  toString,
-  trim,
-  findIndex,
-  concat,
-  join,
-  curry,
-  cloneDeep,
-  set,
-} from 'lodash';
+import get from 'lodash/get';
+import reduce from 'lodash/reduce';
+import split from 'lodash/split';
+import includes from 'lodash/includes';
+import endsWith from 'lodash/endsWith';
+import isEqual from 'lodash/isEqual';
+import toString from 'lodash/toString';
+import trim from 'lodash/trim';
+import findIndex from 'lodash/findIndex';
+import concat from 'lodash/concat';
+import join from 'lodash/join';
+import curry from 'lodash/curry';
+import cloneDeep from 'lodash/cloneDeep';
+import set from 'lodash/set';
 
 export const detectArrayOfObject = pathElement => (
   includes(pathElement, '[{') && endsWith(pathElement, '}]')
