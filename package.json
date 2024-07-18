@@ -2,6 +2,7 @@
   "name": "hoothoot",
   "version": "2.0.0",
   "description": "hoothoot hoothoot",
+  "type": "module",
   "main": "lib/index.js",
   "module": "es/index.js",
   "author": "Khoa Thai",
